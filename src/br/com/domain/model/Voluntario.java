@@ -9,5 +9,6 @@ public class Voluntario extends Pessoa {
     @Override
     public String getTipo() {
         return "VOLUNTARIO";
+
     }
 }
