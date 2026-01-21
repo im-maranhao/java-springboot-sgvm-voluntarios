@@ -11,4 +11,5 @@ public abstract class Pessoa {
     protected String email;
 
     public abstract String getTipo();
+
 }
