@@ -18,5 +18,7 @@ public class VoluntarioService {
     public List<Voluntario> listar() {
         return repository.findAll();
     }
-
+    public void deletar(Long id) {
+        repository.deleteById(id);
+    }
 }
