@@ -10,4 +10,8 @@ public class VoluntarioService {
     }
 
 
+    public Voluntario cadastrar(Voluntario voluntario) {
+        voluntario.setAtivo(true);
+        return repository.save(voluntario);
+    }
 }
