@@ -14,4 +14,9 @@ public class VoluntarioService {
         voluntario.setAtivo(true);
         return repository.save(voluntario);
     }
+
+    public List<Voluntario> listar() {
+        return repository.findAll();
+    }
+
 }
