@@ -6,5 +6,6 @@ public class Lider extends Pessoa{
 
     @Override
     public String getTipo(){
-
+        return "LÍDER";
+    }
 }
