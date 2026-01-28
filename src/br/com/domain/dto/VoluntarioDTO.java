@@ -9,4 +9,7 @@ public class VoluntarioDTO {
     @Email(message = "Email inválido")
     @NotBlank
     private String email;
+
+    @NotBlank
+    private String telefone;
 }
