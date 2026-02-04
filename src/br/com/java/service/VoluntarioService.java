@@ -22,7 +22,9 @@ public class VoluntarioService implements CadastroService<Voluntario> {
         voluntario.setAtivo(true);
         return repository.save(voluntario);
     }
-    public Voluntario observacoes()
+    public Voluntario observacoes(){
+
+}
 
     public List<Voluntario> listar() {
         return repository.findAll();
