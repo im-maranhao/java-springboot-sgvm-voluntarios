@@ -21,8 +21,8 @@ public class VoluntarioService implements CadastroService<Voluntario> {
         voluntario.setAtivo(true);
         return repository.save(voluntario);
     }
-    public Voluntario observacoes(){
-
+    public Voluntario observacoes(Long id, String observacoes){
+    Voluntario voluntario = repository.finfById(id)
 }
 
     public List<Voluntario> listar() {
