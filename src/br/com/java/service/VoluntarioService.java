@@ -10,7 +10,6 @@ import java.util.List;
 @Service
 public class VoluntarioService implements CadastroService<Voluntario> {
 
-    private final VoluntarioRepository repository;
 
     private final VoluntarioRepository repository;
 
