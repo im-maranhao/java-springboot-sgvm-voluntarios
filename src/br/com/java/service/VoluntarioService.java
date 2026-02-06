@@ -10,8 +10,8 @@ import java.util.List;
 @Service
 public class VoluntarioService implements CadastroService<Voluntario> {
 
-
     private final VoluntarioRepository repository;
+    private String observacoes;
 
     public VoluntarioService(VoluntarioRepository repository) {
         this.repository = repository;
@@ -34,5 +34,14 @@ public class VoluntarioService implements CadastroService<Voluntario> {
 
     public void deletar(Long id) {
         repository.deleteById(id);
+    }
+
+
+    public String getObservacoes() {
+        return observacoes;
+    }
+
+    public void setObservacoes(String observacoes) {
+        this.observacoes = observacoes;
     }
 }
