@@ -24,6 +24,8 @@ public class VoluntarioService implements CadastroService<Voluntario> {
     public Voluntario observacoes(Long id, String observacoes){
     Voluntario voluntario = repository.finfById(id)
             .orElseThrow(() -> new RuntimeException("Voluntário não encontrado"));
+    voluntario.setObservacoes(observacoes);
+    return repository.save(voluntario);
 }
 
     public List<Voluntario> listar() {
