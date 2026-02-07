@@ -36,7 +36,6 @@ public class VoluntarioService implements CadastroService<Voluntario> {
         repository.deleteById(id);
     }
 
-
     public String getObservacoes() {
         return observacoes;
 
