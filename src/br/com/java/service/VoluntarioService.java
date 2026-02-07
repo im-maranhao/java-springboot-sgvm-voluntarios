@@ -39,6 +39,7 @@ public class VoluntarioService implements CadastroService<Voluntario> {
 
     public String getObservacoes() {
         return observacoes;
+
     }
 
     public void setObservacoes(String observacoes) {
