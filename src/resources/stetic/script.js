@@ -31,5 +31,4 @@ function deletar(id) {
   fetch(`${API}/${id}`, { method: "DELETE" })
     .then(() => listar());
 }
-
 listar();
