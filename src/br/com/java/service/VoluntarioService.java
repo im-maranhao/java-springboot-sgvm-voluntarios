@@ -30,7 +30,6 @@ public class VoluntarioService implements CadastroService<Voluntario> {
     voluntario.setObservacoes(observacoes);
     return repository.save(voluntario);
 }
-
     public List<Voluntario> listar() {
         return repository.findAll();
     }
